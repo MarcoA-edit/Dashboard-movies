@@ -21,10 +21,7 @@ Na segunda aba, é possível acessar informações detalhadas sobre cada filme, 
 ### Demonstração de Requisição na API OMDB
 Nesta seção, você pode assistir a um vídeo demonstrativo mostrando como é feita uma requisição na API OMDB e como os dados são processados e utilizados no dashboard.
 
-![Demonstração da API OMDB](https://github.com/user-attachments/assets/1fb718d6-c75d-431e-a0ba-86f9f4224b32)
-
-
-
+https://github.com/user-attachments/assets/8f962655-c410-4943-bdea-7b612abb9974
 
 ## 🚀 Funcionalidades
 - **Panorama Geral**: Comparação e análise de métricas gerais dos filmes.
