@@ -421,28 +421,30 @@ with t2:
         fig_compare.update_yaxes(visible=False)
         st.plotly_chart(fig_compare)
 
-    pop2 = st.popover("Adicionar filme")
-    with pop2:
-        popl1 = st.columns(1)
-        popb1, popb2 = st.columns(2)
+#### Nessa parte é feita o request na API OMDB, por enquanto só fuciona com o código na máquina
 
-    user_input = popl1[0].text_area("Adicionar Filme:", height=70)
+    #pop2 = st.popover("Adicionar filme")
+    #with pop2:
+    #    popl1 = st.columns(1)
+    #    popb1, popb2 = st.columns(2)
 
-    if popb1.button("Salvar"):
-        if user_input:
-            texto = pd.DataFrame({"Filme": [user_input]})
-            texto.to_csv('carga.csv', index=False)
-            try:
-                subprocess.run(['python', 'request.py'], check=True)
+    #user_input = popl1[0].text_area("Adicionar Filme:", height=70)
+
+    #if popb1.button("Salvar"):
+        #if user_input:
+            #texto = pd.DataFrame({"Filme": [user_input]})
+           #texto.to_csv('carga.csv', index=False)
+           # try:
+                #subprocess.run(['python', 'request.py'], check=True)
                 
-                subprocess.run(['python', 'convert.py'], check=True)
+                #subprocess.run(['python', 'convert.py'], check=True)
                 
-                subprocess.run(['python', 'final_convert.py'], check=True)
+                #subprocess.run(['python', 'final_convert.py'], check=True)
                 
-                popb2.success("Carga efetuada com sucesso!")
-            except subprocess.CalledProcessError as e:
-                popb2.error(f"Erro ao executar um dos scripts: {e}")
-            except Exception as e:
-                popb2.error(f"Erro inesperado: {e}")
-        else:
-            popb2.warning("Por favor, escreva algo antes de salvar.")
+                #popb2.success("Carga efetuada com sucesso!")
+            #except subprocess.CalledProcessError as e:
+                #popb2.error(f"Erro ao executar um dos scripts: {e}")
+            #except Exception as e:
+                #popb2.error(f"Erro inesperado: {e}")
+        #else:
+            #popb2.warning("Por favor, escreva algo antes de salvar.")
