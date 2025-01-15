@@ -9,7 +9,7 @@ import plotly.graph_objects as go
 from io import BytesIO
 import os
 
-image = Image.open("C:\\Users\\Marco\\OneDrive\\Desktop\\OMDB\\Nolan.jpg")
+image = Image.open("Nolan.jpg")
 resized_image = image.resize((300, 150)) 
 
 st.set_page_config(page_title="Nolan Movies", layout="wide", page_icon="🍿")
