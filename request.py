@@ -34,7 +34,7 @@ def salvar_json(dados, nome_arquivo):
         print(f"Erro ao salvar o arquivo JSON: {e}")
 
 if __name__ == "__main__":
-    api_key = "58a82d96"
+    api_key = "Inserir sua API Key"
     
     resultados = []
 
