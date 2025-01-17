@@ -58,7 +58,7 @@ https://github.com/user-attachments/assets/8f962655-c410-4943-bdea-7b612abb9974
    ```
 4. Execute o aplicativo Streamlit:
    ```bash
-   streamlit run app.py
+   streamlit run dash.py
    ```
 5. Acesse o dashboard no navegador em `http://localhost:8501`.
 
