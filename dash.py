@@ -421,7 +421,7 @@ with t2:
         fig_compare.update_yaxes(visible=False)
         st.plotly_chart(fig_compare)
 
-#### Nessa parte é feita o request na API OMDB, por enquanto só fuciona com o código na máquina
+#### Nessa parte é feita o request na API OMDB, por enquanto só fuciona com o código baixado
 
     #pop2 = st.popover("Adicionar filme")
     #with pop2:
