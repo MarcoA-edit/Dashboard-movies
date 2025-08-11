@@ -187,7 +187,7 @@ with t2:
                 response.raise_for_status()
                 img = Image.open(BytesIO(response.content))
 
-                resized_img = img.resize((400, 550))
+                resized_img = img.resize((400, 700))
 
                 m1.image(resized_img, use_container_width=False)
             except Exception as e:
@@ -448,6 +448,7 @@ with t2:
                 #popb2.error(f"Erro inesperado: {e}")
         #else:
             #popb2.warning("Por favor, escreva algo antes de salvar.")
+
 
 
 
