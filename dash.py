@@ -12,9 +12,6 @@ import os
 image = Image.open("Nolan.jpg")
 resized_image = image.resize((300, 150)) 
 
-image_path = os.path.join(os.path.dirname(__file__), "pf.png")
-img_base64 = get_base64_of_bin_file(image_path)
-
 st.set_page_config(page_title="Nolan Movies", layout="wide", page_icon="🍿")
 st.markdown("##")
 
@@ -451,6 +448,7 @@ with t2:
                 #popb2.error(f"Erro inesperado: {e}")
         #else:
             #popb2.warning("Por favor, escreva algo antes de salvar.")
+
 
 
 
