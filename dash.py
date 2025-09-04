@@ -12,6 +12,23 @@ import os
 image = Image.open("Nolan.jpg")
 resized_image = image.resize((300, 150)) 
 
+page_bg = f"""
+<style>
+[data-testid="stAppViewContainer"] {{
+    background-image: url("data:image/png;base64,{img_base64}");
+    background-size: cover;   /* ocupa toda a tela sem distorcer */
+    background-position: center;
+    background-attachment: fixed;
+}}
+[data-testid="stHeader"] {{
+    background: rgba(0,0,0,0);
+}}
+[data-testid="stToolbar"] {{
+    right: 2rem;
+}}
+</style>
+"""
+
 st.set_page_config(page_title="Nolan Movies", layout="wide", page_icon="🍿")
 st.markdown("##")
 
@@ -448,6 +465,7 @@ with t2:
                 #popb2.error(f"Erro inesperado: {e}")
         #else:
             #popb2.warning("Por favor, escreva algo antes de salvar.")
+
 
 
 
