@@ -3,4 +3,3 @@ pandas
 plotly-express
 Pillow
 requests
-base64
