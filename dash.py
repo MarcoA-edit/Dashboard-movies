@@ -8,6 +8,7 @@ import requests
 import plotly.graph_objects as go
 from io import BytesIO
 import os
+import base64
 
 image = Image.open("Nolan.jpg")
 resized_image = image.resize((300, 150)) 
@@ -468,6 +469,7 @@ with t2:
                 #popb2.error(f"Erro inesperado: {e}")
         #else:
             #popb2.warning("Por favor, escreva algo antes de salvar.")
+
 
 
 
